@@ -1,0 +1,32 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "[kotlin][java]": {
+    "editor.tabSize": 4
+  },
+  "[swift][objective-c][objective-cpp]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/node_modules": false, // Temporarily disabled in case we need to tweak React Native dependencies.
+    "**/.dev": true,
+    "**/.shadowenv.d": true
+  },
+  "search.exclude": {
+    "**/dist": true,
+    "**/node_modules": true
+  }
+}
