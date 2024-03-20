@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Home } from "screens/Home";
 import { Pokedex } from "screens/Pokedex";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Pokemon } from "screens/Pokemon";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,7 @@ export default function App() {
             options={{ headerShown: false }}
           />
           <Stack.Screen name="Pokedex" component={Pokedex} />
+          <Stack.Screen name="Pokemon" component={Pokemon} />
         </Stack.Navigator>
       </NavigationContainer>
     </QueryClientProvider>
